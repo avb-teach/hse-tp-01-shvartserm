@@ -29,7 +29,7 @@ def collect_files(input_dir: str, output_dir: str, depth: int = -1):
         elif os.path.isdir(path):
             if depth == -1:
                 collect_files(path, output_dir)
-            elif depth > 0:
+            elif depth > 1:
                 collect_files(path, output_dir, depth-1)
 
 
