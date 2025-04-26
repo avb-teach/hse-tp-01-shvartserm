@@ -1,1 +1,1 @@
-echo "hello world"
+python3 collect_files.py $*
